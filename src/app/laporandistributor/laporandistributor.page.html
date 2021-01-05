@@ -1,0 +1,91 @@
+<ion-content>
+  <div class="container">
+    <ion-buttons class="menu" slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <h1>Kantin'Qu</h1>   
+    <ion-title>Laporan Keuangan</ion-title>     
+            
+       <ion-card class="keterangan"> 
+        <ion-label class="tittle">Laporan hari ini</ion-label>
+
+      </ion-card>
+      
+      <ion-grid class="ktr">
+        <ion-row>
+          <ion-col size="3"  class="nama-menu">
+            Menu
+          </ion-col>
+          <ion-col  size="2.3" class="jumlah">
+            Terjual
+          </ion-col>
+          <ion-col size="3.4" class="jenis-menu">
+            Harga
+          </ion-col>
+          <ion-col size="3.1" class="aksi">
+            Total
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+      <ion-card class="card" *ngFor="let laporan of laporans">
+        <ion-item class="item">
+          <ion-label class="title">{{laporan.title}}</ion-label>
+          <ion-label class="amount">{{laporan.amount}} </ion-label>
+          <ion-label class="price">{{laporan.price | currency:'Rp '}}</ion-label>
+          <ion-label class="price2">{{laporan.price * laporan.amount | currency:'Rp '}}</ion-label>
+        </ion-item>
+    </ion-card>
+
+                    
+      <ion-card routerLink="/pesanandistributor" class="custom-card1">          
+          <ion-card-header> 
+             <div class="main">
+              <ion-img src="assets/icon/pesan.svg"></ion-img>
+            </div> 
+          </ion-card-header>          
+           <ion-card-content>
+            Pesan
+          </ion-card-content>            
+        </ion-card>
+
+        <ion-card routerLink="/bookingdistributor" class="custom-card3">
+          <ion-card-header> 
+             <div class="main">
+              <ion-img src="assets/icon/booking.svg"></ion-img>
+            </div> 
+          </ion-card-header>           
+           <ion-card-content class="name2">
+            Booking
+          </ion-card-content>      
+        </ion-card>
+
+        <ion-card class="custom-card4">
+          <ion-card-header> 
+             <div class="main">
+              <ion-img src="assets/icon/laporan.svg"></ion-img>
+            </div> 
+          </ion-card-header> 
+           <ion-card-content class="name3">
+            Laporan
+          </ion-card-content>
+        </ion-card>
+
+  </div>
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar>
+      <div class="daftarmenu-icon">
+        <ion-img  routerLink="/menumakanan" src="assets/icon/daftarmenu.svg"></ion-img>                  
+       </div>
+       <div class="menu-icon">
+        <ion-img  routerLink="/pesanandistributor" src="assets/icon/icon_menu.svg"></ion-img>                       
+       </div>
+       <div class="setting-icon">
+        <ion-img routerLink="/pengaturan2"  src="assets/icon/settings.svg"></ion-img>                       
+       </div>
+  </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

@@ -1,0 +1,329 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  background: white;
+  font-family: 'poppins';
+ }
+
+ .menu {
+  position: absolute;
+  left: 3.8%;
+  top: 5.7%;
+
+}
+.container h1{
+  position: absolute;
+  left: 8%;
+  right: 46.93%;
+  top: 16%;
+  bottom: 80.67%;
+
+  font-family: 'poppins';
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+.custom-card1{
+  position: absolute;
+  left: 6%;
+  right: 75.2%;
+  top: 24.83%;
+  bottom: 63.17%; 
+  width: 65px;
+  height: 73.04px;
+  background: #E7E7E7;
+  border-radius: 10px;
+}
+
+ion-img{
+  width: 130%;
+  margin-left: -5px;
+  margin-top: -9px;
+}
+ion-card-content{
+  position: absolute;
+  left: -3%;
+  right: 71.47%;
+  top: 80%;
+  bottom: 63.05%;
+  font-family: 'poppins';
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: black;
+}
+.name{
+  position: absolute;
+  left: -5%;
+  right: 71.47%;
+  top: 80%;
+  bottom: 63.05%;
+  font-family: 'poppins';
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: black;
+}
+.custom-card3{
+  position: absolute;
+  left: 40%;
+  right: 29.87%;
+  top: 24.59%;
+  bottom: 63.05%;
+  width: 65px;
+  height: 73.04px;
+  background: linear-gradient(180deg, rgba(2, 153, 255, 0.94) 0%, rgba(55, 119, 177, 0.6768) 100%);
+  border-radius: 10px;
+}
+.name2{
+  position: absolute;
+  left: -11%;
+  right: 71.47%;
+  top: 80%;
+  bottom: 63.05%;
+  font-family: 'poppins';
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color:  #FFFFFF;
+}
+.custom-card4{
+  position: absolute;
+  left: 73%;
+  right: 7.73%;
+  top: 24.59%;
+  bottom: 63.05%;
+  width: 65px;
+  height: 73.04px;
+  background: #E7E7E7;
+  border-radius: 10px;
+}
+.name3{
+  position: absolute;
+  left: -10%;
+  right: 71.47%;
+  top: 80%;
+  bottom: 63.05%;
+  font-family: 'poppins';
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: black;
+}
+ion-title{
+  position: absolute;
+  left: 20px;
+  top: 325px;
+  font-size: 22px;
+  color: #000000;
+}
+
+.icon{
+  width: 21px;
+  left: -5px;
+  right: 87.73%;
+  margin-top: 4px;
+  bottom: 52.77%;
+  margin: 0;
+}
+.nama1{
+  position: absolute;
+  left: 30px;
+  margin-top: 1px;
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.namastatus1{
+  left: 30px;
+  top: 32px;
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #131313;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.namastatus2{
+  left: 30px;
+  top: 32px;
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #131313;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.selesai{
+  position: absolute;
+  left: 25px;
+  top: 360px;
+  height: 50px;
+  width: 110px;
+  border-radius: 10px;
+  border-color: rgba(2, 153, 255, 0.94);
+  border: 1px;
+  box-shadow: 0;
+}
+.keterangan{
+  box-shadow:none !important;
+  position: absolute;
+  left: 6%;
+  top: 56%;
+  width: 342px;
+  height: 35px;
+  background:  rgba(233, 233, 233, 0.5);
+  border-radius: 10px;
+}
+.tittle{
+  position: absolute;
+  left: 20px;
+  top: 6px;
+  font-family: 'poppins';
+  font-size: 15px;
+  color: #131313;
+}
+.ktr{
+  left:12%;
+  top: 484px;      
+  width: 342px;
+  height: 35px;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+}
+.nama-menu{
+  position: absolute;
+  left: 1px;
+  top: 6px;
+  font-family: 'poppins';
+  font-size: 16px;
+  max-width: 120px !important;
+}
+.jumlah{
+  position: absolute;
+  left: 113px;
+  top: 6px;
+  font-family: 'poppins';
+  font-size: 16px;
+  max-width: 70px !important;
+}
+.harga{
+  position: absolute;
+  left: 190px;
+  top: 6px;
+  font-family: 'poppins';
+  font-size: 16px;
+  max-width: 140px !important;
+}
+
+.aksi{
+  position: absolute;
+  left: 285px;
+  top: 6px;
+  font-family: 'poppins';
+  font-size: 16px;
+  color: #131313;
+}
+
+.list{
+  left: 38px;
+  top: 530px;      
+  width: 340px;
+  height: 35px;
+  right: 75.2%;
+  bottom: 63.17%;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  background:  rgba(233, 233, 233, 0.5);
+}
+.nama-menu1{
+  margin-left: 10px;
+  margin-top: 5px;
+  font-family: 'poppins';
+  font-size: 15px;
+  color: #131313;
+  padding: 0 !important;
+}
+.jumlah1{
+  margin-left: 35px;
+  margin-top: 5px;
+  font-family: 'poppins';
+  font-size: 15px;
+  color: #131313;
+  padding: 0 !important;
+}
+.jenis-menu1{
+  left: -45px;
+  margin-top: 5px;
+  font-family: 'poppins';
+  font-size: 15px;
+  color: #131313;
+  padding: 0 !important;
+}
+.icon-aksi{
+  margin-left: 5px;
+  margin-top: 1px;
+  padding: 0 !important;
+  position: absolute;   
+  width: 22px;
+  height: 22px;
+}
+.list2{
+  left: 38px;
+  top: 567px;      
+  width: 340px;
+  height: 35px;
+  right: 75.2%;
+  bottom: 63.17%;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  background:  rgba(233, 233, 233, 0.5);
+}
+ion-tab-bar{
+  height: 72px;
+  background: #ECEBEB;
+}
+.daftarmenu-icon{
+  position: absolute;
+  width: 20px;
+  left: 80px;
+  top: 29px;
+ }
+.menu-icon{
+  position: absolute;
+  width: 35px;
+  left: 186px;
+  top: 16px;
+}
+.setting-icon{
+  position: absolute;
+  width: 25px;
+  left: 300px;
+  top: 27px;
+}

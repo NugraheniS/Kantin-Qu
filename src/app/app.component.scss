@@ -1,0 +1,99 @@
+.container {
+    background: linear-gradient(180deg, rgba(2, 153, 255, 0.94) 0%, rgba(55, 119, 177, 0.6768) 100%);
+   }
+.img-profil {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 35px;
+    top: 59px;
+}
+.nama {
+    position: absolute;
+    width: 250px;
+    height: 36px;
+    left: 35px;
+    top: 130px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+
+    letter-spacing: -0.3px;
+
+    color: black;
+}
+.id {
+    position: absolute;
+    width: 44px;
+    height: 23px;
+    left: 35px;
+    top: 163px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    
+    text-align: center;
+    letter-spacing: -0.3px;
+    
+    color: black;    
+}
+.profil {
+    position: absolute;
+    width: 44px;
+    height: 23px;
+    left: 80px;
+    top:226px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: black;
+}
+.keluar {
+    position: absolute;
+    width: 70px;
+    height: 23px;
+    left: 74px;
+    top:280px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: black; 
+}
+.icon-profil{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 14.12%;
+    right: 83.4%;
+    top: 28.96%;
+    bottom: 70.07%;
+}
+.icon-keluar {
+    width: 30px;
+    height: 30px;
+    top: 70px;
+    left: 15px;
+    position: absolute;
+    left: 13.12%;
+    right: 83.4%;
+    top: 34.96%;
+    bottom: 70.07%;
+}

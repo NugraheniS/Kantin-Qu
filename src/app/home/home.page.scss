@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+ }
+ 
+ .container h1{
+   position: absolute;
+   left: auto;
+   right: auto;
+   top: 78.69%;
+   bottom: 16.01%;
+   
+   font-family: 'poppins';
+   font-style: normal;
+   font-weight: bold;
+   font-size: 28px;
+   line-height: 42px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #179DF8;
+ }
+ 
+ .container img{
+   position: absolute;
+   left: auto;
+   right: auto;
+   top: 27.09%;
+   bottom: 43.1%;
+   width: 228px;
+   height: auto;
+ }
+ .background{
+   background: white;
+ }
+ .container button{
+   position: absolute;
+   left: auto;
+   right: auto;
+   top: 86.95%;
+   bottom: 7.14%;
+ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 20px;
+   min-width:  190px;
+   height: 48px;
+   background: #0299FF;
+   border-radius: 20px;
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 30px;
+   color: white;
+ }

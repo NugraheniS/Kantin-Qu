@@ -1,0 +1,162 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(2, 153, 255, 0.94) 0%, rgba(55, 119, 177, 0.6768) 100%);
+   }
+  
+   .container img{
+    position: absolute;
+    left: 6.93%;
+    right: 89.56%;
+    top: 7.76%;
+    bottom: 89.81%;
+    width: 14px;
+    height: auto;
+    color: black;
+  }
+  .container h1{
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 12.2%;
+    bottom: 82.14%;
+  
+  
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color : white;
+  }
+  
+  .container-form-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ion-card{
+    position: absolute;
+    left: 8%;
+    right: 7.2%;
+    top: 20.94%;
+    bottom: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 0.6;
+    border-radius: 10px;
+    width: 321px;
+    height: 198px;
+    border-radius: 10px;
+  }
+  
+  .link{
+    position: absolute;
+    left: center;
+    right: center;
+    top: 350px;
+    bottom: 98px;
+    
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: none;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+  }
+  
+  .container button{
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 400px;
+    bottom: 92px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width:  170px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(17, 16, 16);
+  }
+  
+  
+  .input {
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: none;
+    border: none;
+    outline: none;
+    color: black;
+    margin-left: 45px;
+    margin-top: -7px;
+  }
+  
+  .label {
+    top: 50px;
+    bottom: 1px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: none;
+    border: none;
+    outline: none;
+    color:#373434;
+    margin-top: -6px;
+    margin-left: 45px;
+  }
+  
+  .newpassword{
+    top: 85px;
+    bottom: 1px;
+    border-radius: 6px;
+    height: 50px;
+    background: #FFFFFF;
+  }
+  
+  .password{
+    position: absolute;
+  left: 12.15%;
+  right: 12.15%;
+  top: 21.2135%;
+  bottom: 55.56%;
+  padding-top: 30px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+  }
+  
+  .icon-lock{
+    width: 49.2px; 
+    position: absolute;
+    left: 13.8%;
+    right: 52.53%;
+    top: 34.3%;
+    bottom: 63.18%;
+    color: black;
+  }
+
+  ion-icon{
+    position: absolute;
+    left: 310px;
+    right: 52.53%;
+    top: 35.5%;
+    bottom: 63.18%;
+    width: 25px;
+  }

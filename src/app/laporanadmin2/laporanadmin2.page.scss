@@ -1,0 +1,149 @@
+.container img{
+    position: absolute;
+    left: 6.93%;
+    right: 89.56%;
+    top: 7.76%;
+    bottom: 89.81%;
+  }
+  .container h1{
+    position: absolute;
+    left: 13.6%;
+    right: 29.07%;
+    top: 4.32%;
+    bottom: 87.77%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+  .tambah{
+    position: absolute;
+    left: 85%;
+    right: 89.56%;
+    top: 8.5%;
+    bottom: 89.81%;
+    width: 23px;
+  }
+    .keterangan{
+      box-shadow:none !important;
+      position: absolute;
+      left: 40px;
+      right: 75.2%;
+      top: 120px;
+      bottom: 63.17%;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 340px;
+      height: 35px;
+      background: white;
+      border-radius: 0px;
+      border-bottom: 1px solid #D5D7D9;
+    }
+    .tittle{
+      position: absolute;
+      left: 20px;
+      top: 6px;
+      font-family: 'poppins';
+      font-size: 15px;
+      color: #828282;;
+    }
+    ion-datetime{
+      position: absolute;
+      left: 140px;
+      top: 6px;
+      font-size: 15px;
+      font-family: 'poppins';
+      color: #828282;;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .btn-makanan{
+        position: absolute;
+        left: 60px;
+        right: 75.2%;
+        top: 180px;
+        bottom: 63.17%;
+        height: 30px;
+        width: 100px;
+        height: 30px;
+        background: #F0F0F0;
+        border-radius: 16px;
+        color: black;
+        font-size: 13px;
+    
+      }
+      .btn-minuman{
+        position: absolute;
+        left: 170px;
+        right: 75.2%;
+        top: 180px;
+        bottom: 63.17%;
+        width: 100px;
+        height: 30px;
+        background: #20B25D;
+        box-sizing: border-box;
+        border-radius: 16px;
+        color: white;
+        font-size: 13px;
+    }
+    
+    .card{
+      left: 6%;
+      width: 340px;
+      top: 230px;
+    }
+    .amount{
+    margin: 0!important;
+    padding: 0!important;
+    min-width: 8% !important;
+    max-width: 8% !important;
+    }
+    .title{
+    margin: 0!important;
+    padding: 0!important;
+    min-width: 28% !important;
+    max-width: 28% !important;
+    
+    }
+    .desc{
+    margin: 0!important;
+    padding: 0!important;
+    min-width: 32% !important;
+    max-width: 32% !important;
+    
+    }
+    .price{
+    margin: 0!important;
+    padding: 0!important;
+    min-width: 40% !important;
+    max-width:40% !important;
+    
+    }
+
+  ion-tab-bar{
+      height: 72px;
+      background: #ECEBEB;
+    }
+    .transaksi-icon{
+      position: absolute;
+      width: 26px;
+      left: 76px;
+      top: 23px;
+     }
+   .menu-icon{
+      position: absolute;
+      width: 60px;
+      left: 172px;
+      top: 7px;
+   }
+   .setting-icon{
+      position: absolute;
+      width: 40px;
+      left: 295px;
+      top: 19px;
+   }

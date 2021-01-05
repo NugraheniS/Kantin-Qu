@@ -1,0 +1,89 @@
+<ion-content> 
+  <div class="container">
+    <ion-buttons class="menu" slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons> 
+    <h1>Kantin'Qu</h1>
+    <h2>Daftar Kantin</h2>   
+                         
+  
+    <div class="tambah">
+      <ion-img routerLink="/tambahkantin" src="assets/tambah.svg"></ion-img>
+    </div> 
+
+                <ion-card routerLink="/pesananmakanan" class="custom-card1">
+                  <ion-card-header> 
+                     <div class="main">
+                      <ion-img src="assets/icon/pesan.svg"></ion-img>
+                    </div> 
+                  </ion-card-header>      
+                   <ion-card-content class="name1">
+                    Pesan
+                  </ion-card-content>     
+                </ion-card>
+
+                <ion-card class="custom-card2">
+                  <ion-card-header> 
+                     <div class="main">
+                      <ion-img src="assets/icon/kantin.svg"></ion-img>
+                    </div> 
+                  </ion-card-header>          
+                   <ion-card-content class="name2">
+                    Kantin
+                  </ion-card-content>     
+                </ion-card>
+
+                <ion-card routerLink="/bookingmakanan" class="custom-card3">
+                  <ion-card-header> 
+                     <div class="main">
+                      <ion-img src="assets/icon/booking.svg"></ion-img>
+                    </div> 
+                  </ion-card-header>           
+                   <ion-card-content class="name3">
+                    Booking
+                  </ion-card-content>     
+                </ion-card>
+
+                <ion-card routerLink="/laporanadmin" class="custom-card4">
+                  <ion-card-header> 
+                     <div class="main">
+                      <ion-img src="assets/icon/laporan.svg"></ion-img>
+                    </div> 
+                  </ion-card-header> 
+                   <ion-card-content class="name4">
+                    Laporan
+                  </ion-card-content>
+                </ion-card>  
+
+                <ion-grid (submit)="addKantin()">
+                  <ion-row >
+                    <ion-col sizeXs="6" *ngFor="let data of datas | async"  class="line"> 
+                      <ion-card class="list-home">
+                        <ion-icon  class="icon-kantin" name="storefront-outline"></ion-icon>
+                        <ion-item class="item1" color="none" lines="none">
+                          <ion-label class="title">{{data.title}}</ion-label>
+                        </ion-item>      
+                            <ion-label class="desc">{{data.desc}} </ion-label>
+                        </ion-card>
+                      </ion-col>
+                  </ion-row>
+                </ion-grid>
+  </div>
+  
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+   <ion-tab-bar>
+     <div class="transaksi-icon">
+       <ion-img  routerLink="/transaksiadmin" src="assets/icon/transaksi.svg"></ion-img>                  
+      </div>
+      <div class="menu-icon">
+       <ion-img routerLink="/pesananmakanan"  src="assets/icon/icon_menu.svg"></ion-img>                       
+      </div>
+      <div class="setting-icon">
+       <ion-img  routerLink="/pengaturan" src="assets/icon/settings.svg"></ion-img>                       
+      </div>
+ </ion-tab-bar>
+ </ion-tabs>   
+ </ion-toolbar>

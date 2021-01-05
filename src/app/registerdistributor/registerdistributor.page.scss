@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(2, 153, 255, 0.94) 0%, rgba(55, 119, 177, 0.6768) 100%);
+   }
+  
+   .container img{
+    position: absolute;
+    left: 6.93%;
+    top: 7.76%;
+    width: 14px;
+    height: auto;
+    color: black;
+  }
+  .container h1{
+    position: absolute;
+    left: auto;
+    top: 12.2%;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color : white;
+  }
+  .container-form-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  ion-card{
+    position: absolute;
+    left: 8%;
+    top: 20.94%;
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 0.6;
+    border-radius: 10px;
+    width: 321px;
+    height: 380px;
+    border-radius: 10px;
+  }
+  
+  .link{
+    position: absolute;
+    left: center;
+    top: 510px;
+    font-family: 'poppins';
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+  }
+  .link2{
+    position: absolute;
+    left: center;
+    top: 580px;
+    font-family: 'poppins';
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+  }
+  .container button{
+    position: absolute;
+    left: auto;
+    top: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width:  170px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 20px;
+    font-family: 'poppins';
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(17, 16, 16);
+  }
+  .input {
+    font-family: 'Poppins';
+    font-size: 18px;
+    line-height: none;
+    color: black;
+  }
+  .label {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color:#373434;
+    margin-top: -8px;
+  }
+  .username{
+    top: 10px;
+    left: 44px;
+    border-radius: 6px;
+    height: 50px;
+    width: 243px;
+    background: #FFFFFF;
+  }
+  .email{
+    top: 40px;
+    left: 44px;
+    border-radius: 6px;
+    height: 50px;
+    width: 243px;
+    background: #FFFFFF;
+  }
+  .kantin{
+    top: 70px;
+    left: 44px;
+    border-radius: 6px;
+    height: 50px;
+    width: 243px;
+    background: #FFFFFF;
+  }
+  .password{
+    top: 100px;
+    left: 44px;
+    border-radius: 6px;
+    height: 50px;
+    width: 243px;
+    background: #FFFFFF;
+  }
+  .icon-user{
+    width: 49.2px; 
+    position: absolute;
+    left: 13.8%;
+    top: 24.99%;
+    color: black;
+  }
+  .icon-telepon{
+    width: 49.2px; 
+    position: absolute;
+    left: 13.8%;
+    top: 34.8%;
+    color: black;
+  }
+  .icon-kantin{
+    width: 49.2px; 
+    position: absolute;
+    left: 13.8%;
+    top: 44.5%;
+    color: black;
+  }
+  .icon-lock{
+    width: 49.2px; 
+    position: absolute;
+    left: 13.8%;
+    top: 54.2%;
+    color: black;
+  }
+  ion-icon{
+    position: absolute;
+    left: 310px;
+    top: 56.1%;
+    width: 25px;
+  }

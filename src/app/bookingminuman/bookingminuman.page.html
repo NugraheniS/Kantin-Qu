@@ -1,0 +1,94 @@
+<ion-content>
+  <div class="container">
+    <ion-buttons class="menu" slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons> 
+    <h1>Kantin'Qu</h1>
+    <h2>Kategori</h2> 
+                <ion-tabs>
+                  <ion-tab-bar>
+                    <div class="transaksi-icon">
+                      <ion-img routerLink="/transaksiadmin" src="assets/icon/transaksi.svg"></ion-img>                  
+                     </div>
+                     <div class="menu-icon">
+                      <ion-img   src="assets/icon/icon_menu.svg"></ion-img>                       
+                     </div>
+                     <div  class="setting-icon">
+                      <ion-img routerLink="/pengaturan" src="assets/icon/settings.svg"></ion-img>                       
+                     </div>
+                </ion-tab-bar>
+                </ion-tabs>
+                       
+                <ion-card routerLink="/pesananmakanan" class="custom-card1">
+                  <ion-card-header> 
+                     <div class="main">
+                      <ion-img src="assets/icon/pesan.svg"></ion-img>
+                    </div> 
+                  </ion-card-header>              
+                   <ion-card-content class="name1">
+                    Pesan
+                  </ion-card-content>         
+                </ion-card>
+         
+                <ion-card routerLink="/daftarkantin"class="custom-card2">
+                  <ion-card-header> 
+                     <div class="main">
+                      <ion-img src="assets/icon/kantin.svg" ></ion-img>
+                    </div> 
+                  </ion-card-header> 
+                  <ion-card-content class="name2">
+                    Kantin
+                  </ion-card-content>
+                </ion-card>
+      
+                <ion-card routerLink="/daftarkantin" class="custom-card3">
+                  <ion-card-header> 
+                     <div class="main">
+                      <ion-img src="assets/icon/booking.svg"></ion-img>
+                    </div> 
+                  </ion-card-header> 
+                  <ion-card-content class="name3">
+                    Booking
+                  </ion-card-content>
+                </ion-card>
+      
+                <ion-card routerLink="/laporanadmin" class="custom-card4">
+                  <ion-card-header> 
+                     <div class="main">
+                      <ion-img src="assets/icon/laporan.svg"></ion-img>
+                    </div> 
+                  </ion-card-header> 
+                   <ion-card-content class="name4">
+                    Laporan
+                  </ion-card-content>
+                </ion-card>
+  
+                <button class="btn-makanan" routerLink="/bookingmakanan">Makanan</button>
+                <button class="btn-jajanan" routerLink="/bookingjajanan">Jajanan</button>
+                <button class="btn-minuman" routerLink="/bookingminuman">Minuman</button>
+  
+                <ion-card class="custom-menu1">
+                  <ion-card-header> 
+                     <div class="menu">
+                      <ion-img src="assets/icon/icon_aisyah.svg"></ion-img>
+                    </div> 
+                  </ion-card-header> 
+                  <ion-card-content class="aisyah1">Kantin Aisyah             
+                  </ion-card-content>
+                  <ion-card-content class="id">0004               
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card class="custom-menu2">
+                  <ion-card-header> 
+                     <div class="menu2">
+                      <ion-img src="assets/icon/icon_bu_siti.svg"></ion-img>
+                    </div> 
+                  </ion-card-header> 
+                  <ion-card-content class="siti1">Kantin Bu siti            
+                  </ion-card-content>
+                  <ion-card-content class="id">0007              
+                  </ion-card-content>
+                </ion-card>
+  </div>
+  </ion-content>

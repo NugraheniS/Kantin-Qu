@@ -1,0 +1,236 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background: white;
+    font-family: 'poppins';
+   }
+
+   .menu {
+    position: absolute;
+    left: 3.8%;
+    top: 5.7%;
+  
+  }
+.container h1{
+    position: absolute;
+    left: 8%;
+    right: 46.93%;
+    top: 16%;
+    bottom: 80.67%;
+
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  .custom-card1{
+    position: absolute;
+    left: 6%;
+    right: 75.2%;
+    top: 24.83%;
+    bottom: 63.17%;
+    
+    width: 65px;
+    height: 73.04px;
+    background: #E7E7E7;
+    border-radius: 10px;
+  }
+  
+  ion-img{
+    width: 130%;
+    margin-left: -5px;
+    margin-top: -9px;
+  }
+  ion-card-content{
+    position: absolute;
+    left: -3%;
+    right: 71.47%;
+    top: 80%;
+    bottom: 63.05%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+  .name{
+    position: absolute;
+    left: -5%;
+    right: 71.47%;
+    top: 80%;
+    bottom: 63.05%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+  .custom-card3{
+    position: absolute;
+    left: 40%;
+    right: 29.87%;
+    top: 24.59%;
+    bottom: 63.05%;
+    width: 65px;
+    height: 73.04px;
+    background: #E7E7E7;
+    border-radius: 10px;
+  }
+  .name2{
+    position: absolute;
+    left: -11%;
+    right: 71.47%;
+    top: 80%;
+    bottom: 63.05%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+  .custom-card4{
+    position: absolute;
+    left: 73%;
+    right: 7.73%;
+    top: 24.59%;
+    bottom: 63.05%;
+    width: 65px;
+    height: 73.04px;
+    background: linear-gradient(180deg, rgba(2, 153, 255, 0.94) 0%, rgba(55, 119, 177, 0.6768) 100%);
+    border-radius: 10px;
+  }
+  .name3{
+    position: absolute;
+    left: -10%;
+    right: 71.47%;
+    top: 80%;
+    bottom: 63.05%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  ion-title{
+    position: absolute;
+    left: 10px;
+    top: 325px;
+    font-size: 22px;
+  }
+ 
+  .keterangan{
+    box-shadow:none !important;
+    position: absolute;
+    left: 5%;
+    right: 75.2%;
+    top: 46%;
+    bottom: 63.17%;
+    
+    width: 342px;
+    height: 35px;
+    background:  rgba(233, 233, 233, 0.5);
+    border-radius: 10px;
+  }
+  .tittle{
+    position: absolute;
+    left: 20px;
+    top: 6px;
+    font-family: 'poppins';
+    font-size: 15px;
+    color: #131313;
+  }
+  ion-subtittle{
+    position: absolute;
+    left: 280px;
+    top: 10px; 
+    color: #C4C4C4;
+  }
+  .ktr{
+    left: 28px;
+    top: 410px;      
+    width: 370px;
+    height: 35px;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+  }
+  .card{
+    left: 1px;
+    width: 375px;
+    top: 130px;
+    padding: 0!important;
+    margin: 0!important;
+  }
+  .amount{
+  margin: 0!important;
+  padding: 0!important;
+  min-width: 10% !important;
+  max-width: 10% !important;
+  }
+  .title{
+  margin: 0!important;
+  padding: 0!important;
+  min-width: 32% !important;
+  max-width: 32% !important;
+  }
+  .price{
+  margin: 0!important;
+  padding: 0!important;
+  min-width: 30% !important;
+  max-width: 30% !important;
+  }
+  .price2{
+    margin: 0!important;
+    padding: 0!important;
+    min-width: 30% !important;
+    max-width: 30% !important; 
+    }
+  ion-tab-bar{
+    height: 72px;
+    background: #ECEBEB;
+  }
+  .daftarmenu-icon{
+    position: absolute;
+    width: 20px;
+    left: 80px;
+    top: 29px;
+   }
+ .menu-icon{
+    position: absolute;
+    width: 35px;
+    left: 186px;
+    top: 16px;
+ }
+ .setting-icon{
+    position: absolute;
+    width: 25px;
+    left: 300px;
+    top: 27px;
+ }
+ .item{
+  padding: 0!important;
+ }

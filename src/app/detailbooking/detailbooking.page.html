@@ -1,0 +1,95 @@
+<ion-content>
+  
+  <div class="container">
+    <div class="icon-back" routerLink="/booking-detail">
+    <ion-img routerLink="/detailmenubooking" src="assets/icon/back_grey.svg" ></ion-img></div>
+    <h1>Pesanan</h1>
+    <ion-card class="data">
+      <ion-card-content>
+        <form>
+          <ion-list >
+            <ion-item class="nama">
+              <ion-input name="nama" [(ngModel)]="nama" placeholder="Nama"></ion-input>
+            </ion-item>
+            <ion-item class="nomor">
+              <ion-input name="nomer" [(ngModel)]="nomer" placeholder="Nomer"></ion-input>
+            </ion-item>
+            <ion-item class="tanggal">
+              <ion-datetime placeholder="Tanggal" required [(ngModel)]="date" name="date" displayFormat="DD MM YY" pickerFormat="DD MM YY"></ion-datetime>
+            </ion-item>
+          </ion-list>
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-list>
+      <ion-card class="detail">
+      <ion-item *ngFor="let p of booking" class="ion-text-wrap">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="8"  class="ion-title">
+              <b>{{ p.name }}</b>
+            </ion-col>
+            <ion-col size="4.5" class="ion-text-end">
+              {{ p.amount * p.price | currency:'Rp  ' }}
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-align-items-center">
+            <ion-col size="2" class="ion-align-self-center">
+              <ion-button color="medium" fill="clear" (click)="decreaseBookingItem(p)">
+                <ion-icon name="remove-circle" slot="icon-only"></ion-icon>
+              </ion-button>
+            </ion-col>
+ 
+            <ion-col size="1" class="ion-align-self-center">
+              {{ p.amount }}
+            </ion-col>
+ 
+            <ion-col size="2" class="ion-align-self-center">
+              <ion-button color="medium" fill="clear" (click)="increaseBookingItem(p)">
+                <ion-icon name="add-circle" slot="icon-only"></ion-icon>
+              </ion-button>
+            </ion-col>
+ 
+            <ion-col size="2" offset="5">
+              <ion-button color="medium" fill="clear" (click)="removeBookingItem(p)">
+                <ion-icon name="trash" slot="icon-only"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-card>
+      <ion-item lines="none">
+        <ion-grid class="jumlah-total">
+          <ion-row class="total">
+            <ion-col size="7">
+              Total
+            </ion-col>
+            <ion-col size="4.5" class="ion-text-end">
+              {{ getTotal() | currency:'Rp  ' }}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+
+      <ion-grid class="btn">
+        <ion-row >
+          <ion-col >
+          <ion-item lines="none">
+          <button (click)="addBooking()" class="btn-tunai" >Tunai</button><br>
+        </ion-item>
+      </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="btn">
+        <ion-row >
+          <ion-item lines="none">
+            <button (click)="addBooking()" class="btn-gopay" >Gopay</button><br>
+        </ion-item>
+        </ion-row>
+      </ion-grid>
+  </div>
+ 
+</ion-content>

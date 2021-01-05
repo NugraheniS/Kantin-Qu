@@ -1,0 +1,49 @@
+<ion-content class="container">
+  <div  class="container"> 
+    
+    <h1>Pengaturan</h1>
+  </div>
+  <div class="img-profil"> 
+    <ion-avatar>
+      <img src="assets/icon/avatar.svg">
+    </ion-avatar>
+  </div>
+  
+  <div class="nama">
+    <h3>Nama</h3>
+  </div>
+  <ion-card class="edit-nama">
+    <ion-card-content>
+      <h2>{{user?.userName}}</h2>
+      </ion-card-content>
+      </ion-card>
+  <div class="email">
+    <h3>Email</h3>
+    </div>
+    <ion-card class="edit-email">
+      <ion-card-content>
+      <h2>{{user?.userEmail}}</h2>
+      </ion-card-content>
+     </ion-card>
+
+
+
+  <ion-tabs>
+    <ion-tab-bar>
+      <div class="transaksi-icon">
+        <ion-img  routerLink="/transaksiadmin" src="assets/icon/transaksi.svg"></ion-img>                  
+       </div>
+       <div class="menu-icon">
+        <ion-img   routerLink="/pesananmakanan" src="assets/icon/icon_menu.svg"></ion-img>                       
+       </div>
+       <div class="setting-icon">
+        <ion-img   src="assets/icon/settings.svg"></ion-img>                       
+       </div>
+  </ion-tab-bar>
+  </ion-tabs>
+
+  <img routerLink="/pesananmakanan" src="assets/icon/back_black.svg"/> 
+  <button class="btn-ubah" (click)="editProfile()">Ubah</button>
+
+  </ion-content>
+

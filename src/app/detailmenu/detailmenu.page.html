@@ -1,0 +1,57 @@
+<ion-content>
+
+  <div class="menu"> 
+    <ion-img src="assets/icon/soto.svg"></ion-img> 
+  </div>
+  <div class="container">
+    <ion-card class="top">
+      <div class="clock"> 
+      <ion-img src="assets/icon/clock.svg"></ion-img></div>
+      <ion-card-header> 
+         
+      </ion-card-header> 
+    
+       <ion-card-content class="kantin-bunurul">
+        Kantin Bu Nurul
+        <ion-subtittle>ID 0001</ion-subtittle>
+      </ion-card-content>
+      <ion-card-content class="jam-bunurul">
+        8.00-14.00
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+<ion-card class="card"  *ngFor="let p of products">
+ 
+  <ion-item  class="list" lines="none">
+    
+    <ion-label class="title">{{p.name}}</ion-label>
+    <ion-label class="price">{{ p.price | currency: 'Rp   '}}</ion-label>
+    
+    <ion-button fill="clear" (click)="addToCart(p)">
+      <ion-icon  class="tambah"  name="add-circle-outline"></ion-icon> 
+      </ion-button>
+    <ion-button fill="clear" (click)="decreaseCartItem(p)">
+      <ion-icon class="kurang" name="remove-circle-outline"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-card>
+
+
+<ion-tabs>
+<ion-tab-bar>
+  <ion-card class="bar-pesanan">
+    <div  routerLink="/detailpesanan">
+      <ion-icon class="lanjut" name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+  </ion-card>
+  <h3 class="total">Total :  {{ getTotal() | currency:'Rp   ' }}</h3>
+  <h3 class="jumlahitem">Jumlah item : {{cartItemCount | async }}</h3>
+</ion-tab-bar>
+</ion-tabs>
+
+<div class="icon-back"> 
+<ion-img routerLink="/pesananmakanan"src="assets/back_menu.svg"></ion-img> 
+ </div>
+
+</ion-content>

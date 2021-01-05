@@ -1,0 +1,21 @@
+<ion-app>
+  <ion-menu menuId="main-menu" contentId="main" >
+    <ion-content >
+      <div class="img-profil"> 
+        <img src="assets/profill.png"/>
+      </div>
+      <h2 class="nama">Fairuz</h2>
+      <h3 class="id">Kasir 1</h3>
+      <h3 routerLink="/profiladmin" class="profil">Profil</h3>
+      <h3 routerLink="/login" class="keluar">Keluar</h3>
+      <div class="icon-profil"> 
+        <ion-img routerLink="/profiladmin" src="assets/profil.svg"></ion-img> 
+      </div>
+        <div class="icon-keluar"> 
+          <ion-img routerLink="/login" src="assets/keluar.svg"></ion-img> 
+        </div>
+   
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

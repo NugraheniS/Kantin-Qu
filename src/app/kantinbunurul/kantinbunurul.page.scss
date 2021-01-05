@@ -1,0 +1,180 @@
+.icon-back{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 24px;
+    top: 65px;
+}
+.menu{
+    width: 410px;
+    height: 319px;
+    left: 0px;
+    top: -2px;
+}
+.container{
+    font-family: 'poppins';
+}
+.top{
+    position: absolute;
+    width: 410px;
+    height: 152px;
+    left: -10px;
+    top: 187px;
+    background: white;
+    border-radius: 20px 20px 0px 0px;
+}
+.clock{
+    position: absolute;
+    width: 14px;
+    height: 13px;
+    left: 40px;
+    top: 100px;
+    }    
+
+.kantin-bunurul{
+    position: absolute;
+    left: 4.9%;
+    right: 37.6%;
+    top: 50px;
+    bottom: 74.86%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    color: #2D2B43;
+}
+ion-subtittle{
+    position: absolute;
+    left: 8%;
+    right: 37.6%;
+    top: 210%;
+    bottom: 72.76%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #9B9B9B;
+}
+.jam-bunurul{
+    position: absolute;
+    left: 11.2%;
+    right: 64%;
+    top: 62%;
+    bottom: 69.9%;
+    font-family: robboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #404040;
+}
+
+.card{
+    left: 5%;
+    width: 350px;
+    top: 40px;
+  }
+  .title{
+  font-family: 'poppins';
+  margin: 0!important;
+  padding: 0!important;
+  min-width: 40% !important;
+  max-width: 40% !important;
+  
+  }
+  .status{
+  font-family: 'poppins';
+  margin: 0!important;
+  padding: 0!important;
+  min-width: 20% !important;
+  max-width: 20% !important;
+  
+  }
+  .price{
+  font-family: 'poppins';
+  margin: 0!important;
+  padding: 0!important;
+  min-width: 30% !important;
+  max-width:30% !important;
+  
+  }
+  .tambah{
+  color: rgba(2, 153, 255, 0.94);
+  margin: 0!important;
+  padding: 0!important;
+  min-width: 12% !important;
+  max-width:12% !important;
+  }
+
+ion-tab-bar{
+    height: 72px;
+    background: rgba(2, 153, 255, 0.94);
+    border-radius: 15px 15px 0px 0px;
+}
+.bar-pesanan{
+    position: absolute;
+    left: 74.13%;
+    right: 5.87%;
+    top: 7%;
+    bottom: 20.45%;
+    background: rgba(213, 213, 213, 0.33);
+    border-radius: 10px;
+    width: 75px;
+    height: 44px;
+}
+.img-lanjut{
+    position: absolute;
+    left: 35%;
+    right: 12.87%;
+    top: 26%;
+    bottom: 32.1%;
+    background: none;
+    width: 22.75px;
+    height: 22.75px;
+}
+.total{
+    position: absolute;
+    width: 137px;
+    height: 1%;
+    left: 20px;
+    top: 9px;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+.jumlahitem{
+    position: absolute;
+    width: 137px;
+    height: 1%;
+    left: 20px;
+    top: 34px;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+

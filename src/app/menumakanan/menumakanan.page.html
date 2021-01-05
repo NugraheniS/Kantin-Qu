@@ -1,0 +1,46 @@
+<ion-content>
+  <div  class="icon-back"> 
+    <ion-img routerLink="/pesanandistributor" src="assets/icon/back_menu.svg"></ion-img> 
+     </div>
+    <div class="menu"> 
+    <ion-img src="assets/icon/soto.svg"></ion-img> 
+  </div>
+  <div class="container">
+    <ion-card class="back">
+      <div class="clock"> 
+      <ion-img src="assets/icon/clock.svg"></ion-img></div>
+
+       <ion-card-content class="nama">
+        {{users?.usersKantin}}
+        <ion-subtittle>ID 0001</ion-subtittle>
+      </ion-card-content>
+      <ion-card-content class="jam">
+        8.00-14.00
+      </ion-card-content>
+      <ion-img routerLink="/tambahmenu" class="plus" src="assets/icon/plus.svg"></ion-img>
+    </ion-card>
+  </div>
+
+  <ion-card class="card" *ngFor="let menu of menus">
+    <ion-item-sliding>
+    <ion-item>
+      
+      <ion-label class="title">{{menu.title}}</ion-label>
+      <ion-label class="price">{{menu.price|currency:'Rp  '}}</ion-label>
+      <ion-button class="status">{{menu.status}} </ion-button>
+    </ion-item>
+  
+    <ion-item-options slide="end">
+
+      <ion-item-option color="danger" (click)="delete(menu.menuId)">
+        Delete
+      </ion-item-option>
+      <ion-item-option color="warning" (click)="edit(menu.menuId)">
+        Edit
+      </ion-item-option>
+
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-card>
+
+</ion-content>

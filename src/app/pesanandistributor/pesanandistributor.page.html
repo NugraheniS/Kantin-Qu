@@ -1,0 +1,110 @@
+<ion-content>
+  
+  <div class="container">
+    <ion-buttons class="menu" slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons> 
+    <h1>Kantin'Qu</h1>   
+    <ion-title>Daftar Pesanan</ion-title>     
+       
+        <ion-card class="selesai">
+          <ion-item lines="none">
+            <ion-img class="icon"src="assets/icon/status.svg"></ion-img>
+            <ion-label class="nama1">{{LikeValue}}</ion-label>
+            <ion-card-content class="namastatus1">
+              Selesai
+            </ion-card-content>
+          </ion-item>
+        </ion-card>
+            
+       <ion-card class="keterangan"> 
+        <ion-label class="tittle">Pesanan hari ini</ion-label>
+      </ion-card>
+      
+      <ion-grid class="ktr">
+        <ion-row>
+          <ion-col class="nama-menu">
+            Nama Menu
+          </ion-col>
+          <ion-col class="jumlah">
+            Jumlah
+          </ion-col>
+          <ion-col class="harga">
+            Total
+          </ion-col>
+          <ion-col class="aksi">
+            Aksi
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+     
+      <ion-grid class="list">
+        <ion-item *ngFor="let p of cart" >
+        <ion-row>
+          <ion-col class="nama-menu">
+            {{ p.name }}
+          </ion-col>
+          <ion-col class="jumlah">
+            {{ p.amount }}
+          </ion-col>
+          <ion-col class="harga">
+            {{ p.amount * p.price | currency:'Rp  ' }}
+          </ion-col>
+          <ion-col class="aksi">
+            <ion-icon class="icon-aksi" name="checkmark-circle" [ngStyle]="{'color': buttonColor}" (click)="addaksi()"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      </ion-grid>
+
+        <ion-card class="custom-card1">         
+            <ion-card-header> 
+               <div class="main">
+                <ion-img src="assets/icon/pesan.svg"></ion-img>
+              </div> 
+            </ion-card-header>          
+             <ion-card-content>
+              Pesan
+            </ion-card-content>            
+          </ion-card>
+
+          <ion-card routerLink="/bookingdistributor" class="custom-card3">
+            <ion-card-header> 
+               <div class="main">
+                <ion-img src="assets/icon/booking.svg"></ion-img>
+              </div> 
+            </ion-card-header>          
+             <ion-card-content class="name2">
+              Booking
+            </ion-card-content>     
+          </ion-card>
+
+          <ion-card routerLink="/laporandistributor" class="custom-card4">
+            <ion-card-header> 
+               <div class="main">
+                <ion-img src="assets/icon/laporan.svg"></ion-img>
+              </div> 
+            </ion-card-header> 
+             <ion-card-content class="name3">
+              Laporan
+            </ion-card-content>
+          </ion-card>
+  </div>
+ 
+</ion-content>
+<ion-toolbar>
+<ion-tabs>
+  <ion-tab-bar>
+    <div class="daftarmenu-icon">
+      <ion-img routerLink="/menumakanan"  src="assets/icon/daftarmenu.svg"></ion-img>                  
+     </div>
+     <div class="menu-icon">
+      <ion-img   src="assets/icon/icon_menu.svg"></ion-img>                       
+     </div>
+     <div class="setting-icon">
+      <ion-img  routerLink="/pengaturan2" src="assets/icon/settings.svg"></ion-img>                       
+     </div>
+</ion-tab-bar>
+</ion-tabs>
+</ion-toolbar>

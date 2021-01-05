@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <img routerLink="/pilihanlogin" src="assets/back.svg"/>
+    <h1>Daftar Akun</h1>
+    <div class="icon-user"> 
+      <ion-img src="assets/user.svg"></ion-img> 
+    </div>
+    <div class="icon-lock"> 
+      <ion-img src="assets/lock.svg"></ion-img> 
+    </div>
+    <div class="icon-email"> 
+      <ion-img src="assets/email.svg"></ion-img> 
+    </div>
+      <ion-Card>
+        <ion-card-content>
+          <ion-item class="username">
+            <ion-label class="label"position="floating">Nama lengkap</ion-label>
+            <ion-input class="input" required type="text"  [(ngModel)]="name" name="name"></ion-input>
+          </ion-item>
+          <ion-item class="email">
+            <ion-label class="label"position="floating">Email</ion-label>
+            <ion-input class="input" required type="email" [(ngModel)]="email" name="email"></ion-input>
+          </ion-item>
+          <ion-item class="password">
+            <ion-label class="label" position="floating">Kata Sandi</ion-label>
+            <ion-input class="input" required type="password" [(ngModel)]="password" name="password"></ion-input>
+          </ion-item>
+      </ion-card-content>
+    </ion-Card>
+
+    <a class="link" href="#" routerLink="/login">Sudah mempunyai akun?</a>
+    <a class="link3">Daftar sebagai</a>
+    <button class="spalsh-btn custom-font" (click)="register()">Admin</button>
+    <a class="link2" href="#" routerLink="/registerdistributor">Daftar sebagai Distributor</a>
+  </div>
+  </ion-content>

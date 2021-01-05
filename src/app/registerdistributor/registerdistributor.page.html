@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <img routerLink="/register" src="assets/back.svg"/>
+    <h1>Daftar Akun</h1>
+    <div class="icon-user"> 
+      <ion-img src="assets/user.svg"></ion-img> 
+    </div>
+    <div class="icon-lock"> 
+      <ion-img src="assets/lock.svg"></ion-img> 
+    </div>
+    <div class="icon-kantin"> 
+      <ion-img src="assets/kantin.svg"></ion-img> 
+    </div>
+    <div class="icon-telepon"> 
+      <ion-img src="assets/email.svg"></ion-img> 
+    </div>
+      <ion-Card>
+        <ion-card-content>
+          <ion-item class="username">
+            <ion-label class="label"position="floating">Nama lengkap</ion-label>
+            <ion-input class="input" type="text"[(ngModel)]="name"></ion-input>
+          </ion-item>
+          <ion-item class="email">
+            <ion-label class="label"position="floating">Email</ion-label>
+            <ion-input class="input" type="text" [(ngModel)]="email"></ion-input>
+          </ion-item>
+          <ion-item class="kantin">
+            <ion-label class="label"position="floating">Nama kantin</ion-label>
+            <ion-input class="input" type="text"[(ngModel)]="kantin"></ion-input>
+          </ion-item>
+          <ion-item class="password">
+            <ion-label class="label" position="floating">Kata sandi</ion-label>
+            <ion-input class="input" type="password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+      </ion-card-content>
+    </ion-Card>
+
+    <a class="link" href="#" routerLink="/logindistributor">Sudah mempunyai akun?</a>
+    <a class="link2">Daftar sebagai</a>
+    <button class="spalsh-btn custom-font" (click)="registerdistributor()">Distributor</button>
+  </div>
+  </ion-content>

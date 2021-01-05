@@ -1,0 +1,356 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background: white;
+    font-family: 'poppins';
+   }
+   .menu {
+    position: absolute;
+    left: -1.5%;
+    top: 3.8%;
+  
+  }
+
+.container h1{
+    position: absolute;
+    left: 8%;
+    right: 46.93%;
+    top: 16%;
+    bottom: 80.67%;
+
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  .custom-card1{
+    position: absolute;
+    left: 6%;
+    right: 75.2%;
+    top: 24.83%;
+    bottom: 63.17%;
+    
+    width: 65px;
+    height: 73.04px;
+    background: #E7E7E7;
+    border-radius: 10px;
+  }
+  .custom-card2{
+    position: absolute;
+    left: 28.13%;
+    right: 52.53%;
+    top: 24.71%;
+    bottom: 63.18%;
+    width: 65px;
+    height: 73.04px;
+    background: #E7E7E7;
+    border-radius: 10px;
+  }
+  ion-img{
+    width: 130%;
+    margin-left: -5px;
+    margin-top: -9px;
+  }
+  ion-card-content{
+    position: absolute;
+    left: -3%;
+    right: 71.47%;
+    top: 80%;
+    bottom: 63.05%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+  }
+  .name1{
+    position: absolute;
+    left: -5%;
+    right: 71.47%;
+    top: 80%;
+    bottom: 63.05%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: black;
+  }
+  .name2{
+    position: absolute;
+    left: -5%;
+    right: 71.47%;
+    top: 80%;
+    bottom: 63.05%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: black;
+  }
+  .custom-card3{
+    position: absolute;
+    left: 51%;
+    right: 29.87%;
+    top: 24.59%;
+    bottom: 63.05%;
+    width: 65px;
+    height: 73.04px;
+    background: linear-gradient(180deg, rgba(2, 153, 255, 0.94) 0%, rgba(55, 119, 177, 0.6768) 100%);
+    border-radius: 10px;
+  }
+  .name3{
+    position: absolute;
+    left: -11%;
+    right: 71.47%;
+    top: 80%;
+    bottom: 63.05%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: white;
+  }
+  .custom-card4{
+    position: absolute;
+    left: 73.93%;
+    right: 7.73%;
+    top: 24.59%;
+    bottom: 63.05%;
+    width: 65px;
+    height: 73.04px;
+    background: #E7E7E7;
+    border-radius: 10px;
+  }
+  .name4{
+    position: absolute;
+    left: -10%;
+    right: 71.47%;
+    top: 80%;
+    bottom: 63.05%;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: black;
+  }
+  .container h2{
+    position: absolute;
+    width: 93px;
+    height: 33px;
+    left: 33px;
+    top: 290px;
+
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+ 
+  .btn-jajanan{
+    position: absolute;
+    left: 38.2%;
+    right: 38.93%;
+    top: 42.83%;
+    bottom: 51.6%;
+    width: 99px;
+    height: 29px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #939292;
+  }
+  .btn-makanan{
+    position: absolute;
+    left: 8.5%;
+    right: 65.6%;
+    top: 42.83%;
+    bottom: 51.6%;
+    width: 99px;
+    height: 29px;
+    background: #F0F0F0;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #939292;
+    padding: 15px;
+  }
+  .btn-minuman{
+    position: absolute;
+    left: 67.6%;
+    right: 8%;
+    top: 42.70%;
+    bottom: 51.6%;
+    width: 99px;
+    height: 29px;
+    background-color: #169FFC;
+    border-radius: 10px;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color:  #FFF5F5;
+  }
+  .custom-menu1{
+    position: absolute;
+    left: 7.2%;
+    right: 53.07%;
+    top: 49.59%;
+    bottom: 31.4%;
+    width: 150px;
+    height: 144px;
+    background: #FFFFFF;
+    box-shadow: -2px -2px 4px #FFFFFF, 0px 2px 4px rgba(25, 38, 73, 0.08), inset -2px -2px 5px #FFFFFF, inset 1px 1px 5px rgba(24, 38, 72, 0.13);
+    border-radius: 26px;
+  }
+  .aisyah1{
+    position: absolute;
+    width: 100px;
+    height: 1%;
+    left: 29px;
+    top: 115px;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    color: #1A1F96;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 2px;
+  }
+  .menu{
+    width: 60%;
+    margin-left: 25px;
+    margin-top: 34px;
+  }
+  
+  .id{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 1px;
+    top: 1px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    color: #A9AEE5;
+  }
+  .custom-menu2{
+    position: absolute;
+    left: 50.13%;
+    right: 9.6%;
+    top: 49.59%;
+    bottom: 28.2%;
+    width: 150px;
+    height: 144px;
+    background: #FFFFFF;
+    box-shadow: -2px -2px 4px #FFFFFF, 0px 2px 4px rgba(25, 38, 73, 0.08), inset -2px -2px 5px #FFFFFF, inset 1px 1px 5px rgba(24, 38, 72, 0.13);
+    border-radius: 26px;
+  }
+  .menu2{
+    width: 70%;
+    margin-left: 5px;
+    margin-top: 22px;
+  }
+  .siti1{
+    position: absolute;
+    width: 100px;
+    height: 1%;
+    left: 30px;
+    top: 114px;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    color: #1A1F96;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 2px;
+  }
+ 
+  ion-tab-bar{
+    height: 72px;
+    background: #ECEBEB;
+  }
+  .transaksi-icon{
+    position: absolute;
+    width: 20px;
+    left: 80px;
+    top: 31px;
+   }
+ .menu-icon{
+    position: absolute;
+    width: 45px;
+    left: 178px;
+    top: 16px;
+ }
+ .setting-icon{
+    position: absolute;
+    width: 30px;
+    left: 300px;
+    top: 27px;
+ }

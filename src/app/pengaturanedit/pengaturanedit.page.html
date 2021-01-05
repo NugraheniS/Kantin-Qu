@@ -1,0 +1,50 @@
+<ion-content class="container">
+  <div routerLink="/pesananmakanan" class="container"> 
+
+    <h1>Edit pengaturan</h1>
+  </div>
+  <div class="img-profil"> 
+    <ion-avatar>
+      <img src="assets/icon/avatar.svg">
+    </ion-avatar>
+  </div>
+  
+  <div class="nama">
+    <h3>Nama</h3>
+  </div>
+  <ion-card class="edit-nama">
+    <ion-card-content>
+      <ion-input required type="text" [(ngModel)]="name" name="name"></ion-input>
+      </ion-card-content>
+      </ion-card>
+  <div class="email">
+    <h3>Email</h3>
+    </div>
+    <ion-card class="edit-email">
+      <ion-card-content>
+        <ion-input required type="email" [(ngModel)]="email" name="email"></ion-input>
+      </ion-card-content>
+     </ion-card>
+
+  
+
+  <ion-tabs>
+    <ion-tab-bar>
+      <div class="transaksi-icon">
+        <ion-img   src="assets/icon/transaksi.svg"></ion-img>                  
+       </div>
+       <div class="menu-icon">
+        <ion-img   src="assets/icon/icon_menu.svg"></ion-img>                       
+       </div>
+       <div class="setting-icon">
+        <ion-img   src="assets/icon/settings.svg"></ion-img>                       
+       </div>
+  </ion-tab-bar>
+  </ion-tabs>
+
+  <img routerLink="/pengaturan" src="assets/icon/back_black.svg"/> 
+  <button class="btn-simpan" (click)="updateProfile()">Simpan</button>
+
+  </ion-content>
+
+

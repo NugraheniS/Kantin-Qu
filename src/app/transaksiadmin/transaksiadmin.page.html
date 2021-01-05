@@ -1,0 +1,50 @@
+<ion-content>
+  
+  <div class="container">
+    <div class="icon-back">
+    <ion-img routerLink="/pesananmakanan" src="assets/icon/back_grey.svg"></ion-img></div>
+    <h1>Transaksi Baru</h1>
+  
+    <ion-card class="keterangan"> 
+      <ion-label class="title">History :</ion-label>
+    </ion-card>
+    <button class="btn-pesanan">Pesanan</button>
+    <button class="btn-booking" routerLink="/transaksibooking">Booking</button>
+    <ion-list>
+      <ion-card class="detail">
+      <ion-item *ngFor="let p of cart" class="ion-text-wrap">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4.5"  class="ion-title">
+              <b>{{ p.name }}</b>
+            </ion-col>
+            <ion-col size="2.5" class="ion-text-end">
+              {{ p.amount }}
+            </ion-col>
+            <ion-col size="4.5" class="ion-text-end">
+              {{ p.amount * p.price | currency:'Rp  ' }}
+            </ion-col>
+          </ion-row>
+          
+        </ion-grid>
+      </ion-item>
+      </ion-card>
+    </ion-list>
+  </div>
+ 
+</ion-content>
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar>
+      <div class="transaksi-icon">
+        <ion-img routerLink="/transaksi" src="assets/icon/transaksi.svg"></ion-img>                  
+       </div>
+       <div class="menu-icon">
+        <ion-img routerLink="/home-admin"   src="assets/icon/icon_menu.svg"></ion-img>                       
+       </div>
+       <div  class="setting-icon">
+        <ion-img routerLink="/profil" src="assets/icon/settings.svg"></ion-img>                       
+       </div>
+  </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

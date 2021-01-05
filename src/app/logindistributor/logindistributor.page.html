@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <img routerLink="/pilihanlogin" src="assets/back.svg"/>
+    <h1>Masukk</h1>
+    <div class="icon-email"> 
+      <ion-img src="assets/email.svg"></ion-img> 
+    </div>
+    <div class="icon-lock"> 
+      <ion-img src="assets/lock.svg"></ion-img> 
+    </div>
+      <ion-Card>
+        <ion-card-content>
+          <ion-item class="username">
+            <ion-label class="label"position="floating">Email</ion-label>
+            <ion-input class="input" type="text" [(ngModel)]="email"></ion-input>
+          </ion-item>
+          <ion-item class="password">
+            <ion-label class="label" position="floating">Kata Sandi</ion-label>
+            <ion-input class="input" type="password"[(ngModel)]="password"></ion-input>
+            
+          </ion-item>
+      </ion-card-content>
+    </ion-Card>
+
+    <a class="link" href="#" routerLink="/lupakatasandi">Lupa kata sandi?</a>
+    <button class="spalsh-btn custom-font" (click)="login()">Masuk</button>
+  </div>
+  </ion-content>

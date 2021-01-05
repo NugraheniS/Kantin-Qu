@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home-admin"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tambah Kantin</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+   
+      <ion-list>
+        <ion-label class="title">Daftar Kantin</ion-label>
+        <ion-item *ngFor="let data of datas | async">
+          <ion-thumbnail slot="start" *ngIf="data.imageUrl">
+            <img [src]="data.imageUrl" alt="">
+          </ion-thumbnail>
+          <ion-label>{{ data.title }}</ion-label>
+          <ion-label>{{ data.desc }}</ion-label>
+          <ion-button slot="end" fill="clear" color="danger" (click)="remove(data)">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+      <ion-card>
+      <form class="ion-padding" (submit)="addKantin()">
+        <ion-item lines="none">
+          <ion-label class="judul" position="stacked">Tambah Baru</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-input name="kantin" [(ngModel)]="newKantin" placeholder="Kantin"></ion-input>
+        </ion-item>
+        <ion-item> 
+          <ion-input name="kategori" [(ngModel)]="kategori" placeholder="kategori"></ion-input>
+        </ion-item>
+
+        <ion-item lines="none">
+          <input type="file" name="inputFile" (change)="chooseFile($event)" required>
+        </ion-item>
+    
+        <ion-button class="simpan" type="submit">Simpan</ion-button>
+      </form>
+   
+
+  </ion-card>
+</ion-content>

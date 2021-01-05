@@ -1,0 +1,53 @@
+<ion-content>
+  
+  <div class="container">
+    <div class="icon-back">
+    <ion-img src="assets/icon/back_grey.svg"></ion-img></div>
+    <h1>Bukti Pembayaran</h1>
+  
+   
+    <ion-list>
+      <ion-card class="detail">
+      <ion-item *ngFor="let p of cart" class="ion-text-wrap">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="4.5"  class="ion-title">
+              <b>{{ p.name }}</b>
+            </ion-col>
+            <ion-col size="2.5" class="ion-text-end">
+              {{ p.amount }}
+            </ion-col>
+            <ion-col size="4.5" class="ion-text-end">
+              {{ p.amount * p.price | currency:'Rp  ' }}
+            </ion-col>
+          </ion-row>
+          
+        </ion-grid>
+      </ion-item>
+    </ion-card>
+      <ion-item lines="none">
+        <ion-grid class="jumlah-total">
+          <ion-row class="total">
+            <ion-col size="7">
+              Total
+            </ion-col>
+            <ion-col size="4.5" class="ion-text-end">
+              {{ getTotal() | currency:'Rp  ' }}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+
+      <ion-grid class="btn">
+        <ion-row >
+          <ion-col >
+          <ion-item lines="none">
+          <button routerLink="/pesananmakanan" class="btn-selesai" >Selesai</button><br>
+        </ion-item>
+      </ion-col>
+        </ion-row>
+      </ion-grid>
+  </div>
+ 
+</ion-content>

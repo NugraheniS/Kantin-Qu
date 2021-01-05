@@ -1,0 +1,93 @@
+<ion-content>
+<div class="container">
+  <ion-buttons class="menu" slot="start">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons> 
+  <h1>Kantin'Qu</h1>
+  <h2>Booking</h2> 
+                     
+              <ion-card routerLink="/pesananmakanan" class="custom-card1">
+                <ion-card-header> 
+                   <div class="main">
+                    <ion-img src="assets/icon/pesan.svg"></ion-img>
+                  </div> 
+                </ion-card-header>              
+                 <ion-card-content class="name1">
+                  Pesan
+                </ion-card-content>         
+              </ion-card>
+       
+              <ion-card routerLink="/daftarkantin"class="custom-card2">
+                <ion-card-header> 
+                   <div class="main">
+                    <ion-img src="assets/icon/kantin.svg" ></ion-img>
+                  </div> 
+                </ion-card-header> 
+                <ion-card-content class="name2">
+                  Kantin
+                </ion-card-content>
+              </ion-card>
+    
+              <ion-card routerLink="/daftarkantin" class="custom-card3">
+                <ion-card-header> 
+                   <div class="main">
+                    <ion-img src="assets/icon/booking.svg"></ion-img>
+                  </div> 
+                </ion-card-header> 
+                <ion-card-content class="name3">
+                  Booking
+                </ion-card-content>
+              </ion-card>
+    
+              <ion-card routerLink="/laporanadmin" class="custom-card4">
+                <ion-card-header> 
+                   <div class="main">
+                    <ion-img src="assets/icon/laporan.svg"></ion-img>
+                  </div> 
+                </ion-card-header> 
+                 <ion-card-content class="name4">
+                  Laporan
+                </ion-card-content>
+              </ion-card>
+
+              <!-- <button class="btn-makanan">Makanan</button>
+              <button class="btn-jajanan" routerLink="/bookingjajanan">Jajanan</button>
+              <button class="btn-minuman" routerLink="/bookingminuman">Minuman</button> -->
+
+              <ion-grid (submit)="addKantin()" >
+                <ion-row >
+                  <ion-col sizeXs="6" *ngFor="let data of datas | async"  class="line"> 
+                    <ion-card class="list-home" routerLink="/detailmenubooking">
+                      <ion-label class="label-id">
+                        {{ data.desc }}
+                      </ion-label>  
+                       <ion-item class="block">
+                        <div *ngIf="data.imageUrl">
+                          <img class="gambar"[src]="data.imageUrl" alt="">
+                        </div>
+                      </ion-item>     
+                      <ion-label class="label-name">
+                            {{ data.title }}
+                      </ion-label>   
+                  </ion-card>
+                    </ion-col>
+                </ion-row>
+              </ion-grid>
+</div>
+</ion-content>
+
+<ion-toolbar>
+<ion-tabs>
+  <ion-tab-bar>
+    <div class="transaksi-icon">
+      <ion-img routerLink="/transaksiadmin" src="assets/icon/transaksi.svg"></ion-img>                  
+     </div>
+     <div class="menu-icon">
+      <ion-img  routerLink="/logindistributor" src="assets/icon/icon_menu.svg"></ion-img>                       
+     </div>
+     <div  class="setting-icon">
+      <ion-img routerLink="/pengaturan" src="assets/icon/settings.svg"></ion-img>                       
+     </div>
+</ion-tab-bar>
+</ion-tabs>
+</ion-toolbar>

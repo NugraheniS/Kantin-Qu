@@ -1,0 +1,55 @@
+<ion-content class="container">
+  <div  class="container"> 
+    
+    <h1>Pengaturan</h1>
+  </div>
+  <div class="img-profil"> 
+    <ion-avatar>
+      <img src="assets/icon/avatar.svg">
+    </ion-avatar>
+  </div>
+  
+  <div class="nama">
+    <h3>Nama</h3>
+  </div>
+  <ion-card class="edit-nama">
+    <ion-card-content>
+      <h2>{{users?.usersName}}</h2>
+      </ion-card-content>
+      </ion-card>
+  <div class="kantin">
+    <h3>Kantin</h3>
+  </div>
+  <ion-card class="edit-kantin">
+    <ion-card-content>
+      <h2>{{users?.usersKantin}}</h2>
+      </ion-card-content>
+       </ion-card>
+  <div class="email">
+    <h3>Email</h3>
+    </div>
+    <ion-card class="edit-email">
+      <ion-card-content>
+      <h2>{{users?.usersEmail}}</h2>
+      </ion-card-content>
+     </ion-card>
+
+     <ion-tabs>
+      <ion-tab-bar>
+        <div class="daftarmenu-icon">
+          <ion-img routerLink="/menumakanan"  src="assets/icon/daftarmenu.svg"></ion-img>                  
+         </div>
+         <div class="menu-icon">
+          <ion-img  routerLink="/pesanandistributor" src="assets/icon/icon_menu.svg"></ion-img>                       
+         </div>
+         <div class="setting-icon">
+          <ion-img  routerLink="/pengaturan2" src="assets/icon/settings.svg"></ion-img>                       
+         </div>
+    </ion-tab-bar>
+    </ion-tabs>
+
+  <img routerLink="/pesanandistributor" src="assets/icon/back_black.svg"/> 
+  <button class="btn-ubah" (click)="editProfile()">Ubah</button>
+
+  </ion-content>
+
